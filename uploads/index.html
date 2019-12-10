@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Node.JS File Upload</title>
+    
+        <style>
+          h1{
+            text-align: center;
+            color: green;
+            font-family: Arial, Helvetica, sans-serif;
+
+          }
+          .fileupload {
+            background: yellow;
+          }
+
+          .myButton {
+            background-color:#44c767;
+            border-radius:28px;
+            border:1px solid #18ab29;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:17px;
+            padding:16px 31px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #2f6627;
+            width: 50%;
+            margin-bottom: 50px;
+            margin-left: 25%;
+          }
+          .myButton:hover {
+            background-color:#5cbf2a;
+          }
+          .myButton:active {
+            position: relative;
+            top: 1px;
+          }
+          
+          </style>
+  </head>
+  <body>
+    <form class="fileupload" action="upload" method="post" enctype="multipart/form-data">
+      <h1>Upload File Here</h1>
+     <input type="file" name="upfile" value="Choose" class="myButton" >
+      
+      <input type="submit" value="Upload" class="myButton">
+    </form>
+  </body>
+</html>
